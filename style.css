@@ -71,6 +71,28 @@ canvas {
   font-size: 5rem;
 }
 
+.lng {
+  margin-left: 1.5rem;
+  animation-name: move;
+  transition-timing-function: ease-in-out;
+}
+.lng:hover {
+  animation: move 1.5s infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .links-list ul li {
   list-style: none;
   margin-right: 2rem;
@@ -130,4 +152,3 @@ canvas {
   align-items: center;
   justify-content: center;
 } */
-
